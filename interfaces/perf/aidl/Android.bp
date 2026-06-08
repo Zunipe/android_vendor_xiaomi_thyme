@@ -1,0 +1,26 @@
+aidl_interface {
+    name: "vendor.zunipe.perf",
+    vendor_available: true,
+    srcs: ["vendor/zunipe/perf/*.aidl"],
+    stability: "vintf",
+    owner: "zunipe",
+    backend: {
+        cpp: {
+            enabled: false,
+        },
+        java: {
+            enabled: true,
+        },
+        ndk: {
+            enabled: true,
+        },
+    },
+    frozen: true,
+    versions_with_info: [
+        {
+            version: "1",
+            imports: [],
+        },
+    ],
+
+}

@@ -1,0 +1,11 @@
+android_app_import {
+    name: "GooglePartnerSetup",
+    apk: "GooglePartnerSetup.apk",
+    privileged: true,
+    presigned: true,
+	preprocessed: true,
+	product_specific: true,
+    dex_preopt: {
+        enabled: false,
+    },
+}

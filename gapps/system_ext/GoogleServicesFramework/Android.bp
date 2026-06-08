@@ -1,0 +1,11 @@
+android_app_import {
+    name: "GoogleServicesFramework",
+    apk: "GoogleServicesFramework.apk",
+    privileged: true,
+    presigned: true,
+	preprocessed: true,
+	system_ext_specific: true,
+    dex_preopt: {
+        enabled: false,
+    },
+}

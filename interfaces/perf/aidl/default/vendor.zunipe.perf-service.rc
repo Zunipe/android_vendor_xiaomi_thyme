@@ -1,0 +1,4 @@
+service vendor.perf-default /vendor/bin/hw/vendor.zunipe.perf-service
+    class hal
+    user system
+    group system
