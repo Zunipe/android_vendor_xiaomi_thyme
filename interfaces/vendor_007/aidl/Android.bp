@@ -1,0 +1,31 @@
+aidl_interface {
+    name: "vendor.zunipe.vendor_007",
+    vendor_available: true,
+    srcs: ["vendor/zunipe/vendor_007/*.aidl"],
+    stability: "vintf",
+    owner: "zunipe",
+    backend: {
+        cpp: {
+            enabled: false,
+        },
+        ndk: {
+            enabled: true,
+        },
+        java: {
+            sdk_version: "system_server_current",
+			apex_available: [
+                "//apex_available:platform",
+                "com.android.wifi",
+            ],
+            min_sdk_version: "30",
+        },
+    },
+    frozen: true,
+    versions_with_info: [
+        {
+            version: "1",
+            imports: [],
+        },
+    ],
+
+}

@@ -496,5 +496,5 @@ PRODUCT_PACKAGES += \
     init.qti.chg_policy \
     sensors.qti \
     sscrpcd \
-	vendor.zunipe.perf-service \
-	TOTP
+    vendor.zunipe.perf-service \
+    TOTP

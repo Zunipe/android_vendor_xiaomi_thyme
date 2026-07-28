@@ -11,4 +11,5 @@ PRODUCT_PACKAGES += \
 	GoogleServicesFramework \
 	Phonesky \
 	GooglePartnerSetup \
-	GmsCore
+	GmsCore \
+	Chrome

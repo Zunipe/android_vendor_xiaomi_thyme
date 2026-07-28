@@ -1,0 +1,18 @@
+cc_binary {
+    name: "vendor.zunipe.vendor_007-service",
+    relative_install_path: "hw",
+    init_rc: ["vendor.zunipe.vendor_007-service.rc"],
+    vintf_fragments: ["vendor.zunipe.vendor_007-service.xml"],
+    vendor: true,
+    srcs: [
+        "Vendor_007.cpp",
+        "main.cpp",
+    ],
+    shared_libs: [
+        "libbase",
+        "libbinder_ndk",
+        "libutils",
+        "liblog",
+        "vendor.zunipe.vendor_007-V1-ndk",
+    ],
+}

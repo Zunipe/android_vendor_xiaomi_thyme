@@ -1,0 +1,8 @@
+service vendor.vendor_007-default /vendor/bin/hw/vendor.zunipe.vendor_007-service
+    class hal
+    user system
+    group system
+
+on post-fs-data
+    mkdir /mnt/vendor/persist/hotspot 0770 system system
+    restorecon /mnt/vendor/persist/hotspot
